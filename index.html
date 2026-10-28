@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: browser-tab title and description -->
+  <title>Nitin Vunnam</title>
+  <meta name="description" content="Nitin Vunnam's personal website and portfolio.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf7f2;
+      --ink: #242321;
+      --muted: #85847e;
+      --accent: #617568;
+      --line: #e6e0d7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: min(876px, calc(100% - 64px));
+      margin-left: clamp(32px, 7.8vw, 160px);
+      padding: 82px 0 64px;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 6vw, 84px);
+      font-weight: 400;
+      line-height: 1.14;
+      letter-spacing: -2.5px;
+    }
+    .intro {
+      margin: 30px 0 0;
+      color: var(--muted);
+      font-size: clamp(19px, 2vw, 26px);
+      line-height: 1.6;
+    }
+    header { padding-bottom: 94px; }
+    section {
+      border-top: 1px solid var(--line);
+      padding: 62px 0;
+    }
+    h2 {
+      margin: 0 0 30px;
+      color: var(--accent);
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 1.6px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    ul { padding: 0; margin: 0; list-style: none; }
+    li + li { margin-top: 26px; }
+    a, .placeholder {
+      font-size: 25px;
+      line-height: 1.5;
+      color: inherit;
+    }
+    a {
+      text-decoration: none;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 1px;
+    }
+    a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 7px;
+      border-radius: 2px;
+    }
+    .arrow {
+      display: inline-block;
+      padding-left: 12px;
+      color: var(--accent);
+      transition: transform 160ms ease;
+    }
+    a:hover .arrow { transform: translateX(4px); }
+    .placeholder .arrow { opacity: .5; }
+    .project-description {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 580px;
+    }
+    .email { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      main { width: calc(100% - 48px); margin-left: 24px; padding-top: 56px; }
+      h1 { letter-spacing: -1.7px; }
+      header { padding-bottom: 64px; }
+      .intro { margin-top: 22px; }
+      section { padding: 42px 0; }
+      h2 { font-size: 15px; margin-bottom: 24px; }
+      a, .placeholder { font-size: 21px; }
+      li + li { margin-top: 22px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .arrow { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <!-- EDIT: your name and one-line introduction -->
+      <h1>Nitin Vunnam</h1>
+      <p class="intro">Your field / role @ Your university / company</p>
+    </header>
+
+    <section aria-labelledby="elsewhere-heading">
+      <h2 id="elsewhere-heading">Elsewhere</h2>
+      <ul>
+        <li><a href="https://github.com/nitinvunnam">GitHub <span class="arrow" aria-hidden="true">→</span></a></li>
+
+        <!-- EDIT: replace the span below with this link, inserting your URL:
+        <li><a href="https://www.linkedin.com/in/YOUR-USERNAME/">LinkedIn <span class="arrow" aria-hidden="true">→</span></a></li>
+        -->
+        <li><span class="placeholder">LinkedIn <span class="arrow" aria-hidden="true">→</span></span></li>
+
+        <!-- EDIT: upload your PDF to files/resume.pdf, then replace the span below with:
+        <li><a href="files/resume.pdf">Resume <span class="arrow" aria-hidden="true">→</span></a></li>
+        -->
+        <li><span class="placeholder">Resume <span class="arrow" aria-hidden="true">→</span></span></li>
+      </ul>
+    </section>
+
+    <!-- OPTIONAL PROJECTS: remove this comment wrapper to show the section.
+    Duplicate a li block for each project and replace the sample text and URL.
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT">Project title <span class="arrow" aria-hidden="true">→</span></a>
+          <p class="project-description">A short sentence about what you built.</p>
+        </li>
+      </ul>
+    </section>
+    -->
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <!-- EDIT: replace with <a class="email" href="mailto:you@example.com">you (at) example (dot) com</a> -->
+      <span class="placeholder email">you (at) example (dot) com</span>
+    </section>
+  </main>
+</body>
+</html>
